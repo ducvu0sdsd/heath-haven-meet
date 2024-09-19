@@ -14,7 +14,7 @@ const Meet = () => {
         if (accessToken && refreshToken) {
             globalThis.localStorage.setItem('accessToken', accessToken)
             globalThis.localStorage.setItem('refreshToken', refreshToken)
-            router.push(`/zero/${id}/${type}`)
+            router.push(`/zego/${id}/${type}`)
         }
     }, [accessToken, refreshToken])
 
