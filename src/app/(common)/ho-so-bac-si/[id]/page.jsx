@@ -42,7 +42,7 @@ const HoSoBacSi = () => {
   const [healthLogBooks, setHealthLogBooks] = useState([]);
   const { globalHandler } = useContext(globalContext)
   useEffect(() => {
-    if (userData.user && userData.user?.role === 'DOCTOR') {
+    if (userData.user) {
       api({
         type: TypeHTTP.GET,
         path: `/doctorRecords/getById/${id}`,
