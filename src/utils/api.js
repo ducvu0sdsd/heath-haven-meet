@@ -1,5 +1,5 @@
 import axios from "axios";
-export let baseURL = 'https://health-care-be.vercel.app'
+export let baseURL = 'https://shoeshop-backend.online'
 axios.defaults.baseURL = `${baseURL}`
 export const deploy = 'https://heath-haven-meet.vercel.app'
 
@@ -15,7 +15,7 @@ export const api = ({ path, body, type, sendToken, port }) => {
         baseURL = 'http://localhost:' + port
         axios.defaults.baseURL = `${baseURL}`
     } else {
-        baseURL = 'https://health-care-be.vercel.app'
+        baseURL = 'https://shoeshop-backend.online'
         axios.defaults.baseURL = `${baseURL}`
     }
     const accessToken = globalThis.window.localStorage.getItem('accessToken')
